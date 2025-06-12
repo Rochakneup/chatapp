@@ -14,13 +14,17 @@
 
     </div>
     <div>
-    t>
+    <button onclick="initializeChatBot()">Initialize Chat Bot</button>
+<script src='https://edge-a.anydone.com/chat.js'></script>
 <script>
-    const apiKeyId =  "01F79F6E14F24BCAAFD86A2ADEFC78BF";
+    function initializeChatBot() {
+    const apiKeyId = "01F79F6E14F24BCAAFD86A2ADEFC78BF";
     const apiSecret = "LspE0x_hQ5qIPPP4HBcgPKQGGP0kd6BDGs2OlknJBtlLKxC";
     const mode = 'sidedrawer_mode'
     const placeholder = {};
-    init_anydone_chat(apiKeyId, apiSecret, placeholder, mode);
+    const initialized = true;
+    init_anydone_chat(apiKeyId, apiSecret, placeholder, mode, initialized);
+    }
 </script>
     </div>
 </body>
